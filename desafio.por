@@ -1,16 +1,16 @@
 programa
 {
+	inclua biblioteca Matematica
 	inclua biblioteca Util
 	
 	funcao inicio()
 	{
-		cadeia nome[10]={"João","Pedro","Judas","Mateus","Paulo","Mariana","Luis","Marcos","José","Maria"}
+		cadeia nome[10]={"João","Pedro","Judas","Mateus","Paulo","Gabigol","Luis","Marcos","José","Maria"}
 		inteiro numero[10]
 		inteiro totalpar = 0 
 		inteiro totalImpar = 0
 
-		//A matriz nome está relacionada com a matriz nuémero
-		//Então se João=nome[0], será também numero[0]
+		//A matriz nome está relacionada com a matriz inteiro//
 		
 		escreva("João,escreva seu número.\n")
 		numero[0]=sorteia(1,10)
@@ -32,7 +32,7 @@ programa
 		numero[4]=sorteia(1,10)
 		escreva(numero[4],"\n")
 
-		escreva("Mariana, escreva seu número.\n")
+		escreva("Gabigol, escreva seu número.\n")
 		numero[5]=sorteia(1,10)
 		escreva(numero[5],"\n")
 
@@ -50,13 +50,57 @@ programa
 
 		escreva("Maria, escreva seu número.\n")
 		numero[9]=sorteia(1,10)
-		escreva(numero[9],"\n \n")
+		escreva(numero[9],"\n")
 
-		se (numero[10] % 2 == 0) 
-		totalpar += numero[10]+totalpar
+		se (numero[0] % 2 == 0) 
+		totalpar += numero[9]+totalpar
 				
-		senao totalImpar -= numero[0]
-	
+		senao totalImpar -= numero[9]
+
+		se (numero[1] % 2 == 0) {
+		totalpar = numero[1]+totalpar}
+		
+		senao totalImpar -= numero[1]
+		
+		se (numero[2] % 2 == 0) {
+			totalpar = numero[2]+totalpar}
+			
+		senao totalImpar -= numero[3]
+		
+		se (numero[3] % 2 == 0) {
+			totalpar = numero[3]+totalpar}
+			
+		senao totalImpar -= numero[3]
+		
+		se (numero[4] % 2 == 0) {
+			totalpar = numero[4]+totalpar}
+			
+		senao totalImpar -= numero[4]
+		
+		se (numero[5] % 2 == 0) {
+			totalpar = numero[5]+totalpar}
+			
+		senao totalImpar -= numero[5]
+		
+		se (numero[6] % 2 == 0) {
+			totalpar = numero[6]+totalpar}
+			
+		senao totalImpar -= numero[6]
+		
+		se (numero[7] % 2 == 0) {
+			totalpar = numero[7]+totalpar}
+			
+		senao totalImpar -= numero[7]
+		
+		se (numero[8] % 2 == 0) {
+			totalpar = numero[8]+totalpar}
+			
+		senao totalImpar -= numero[8]
+		
+		se (numero[9] % 2 == 0) {
+			totalpar = numero[9]+totalpar}
+
+		senao totalImpar -= numero[9]
 
 		escreva("A soma dos pares é: ", totalpar, "\n")
 		escreva("A subtração dos ímpares é: ", totalImpar, "\n")
@@ -67,9 +111,9 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1390; 
- * @PONTOS-DE-PARADA = 33, 35, 37, 39, 41, 43, 45, 15, 47, 17, 49, 19, 51, 21, 53, 23, 25, 27, 29, 31;
- * @SIMBOLOS-INSPECIONADOS = ;
+ * @POSICAO-CURSOR = 2384; 
+ * @PONTOS-DE-PARADA = ;
+ * @SIMBOLOS-INSPECIONADOS = {nome, 8, 9, 4}-{numero, 9, 10, 6};
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
  * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
  */
